@@ -1,0 +1,20 @@
+h1{font-size: 90p;
+}
+p{
+    margin: 35px 100px;
+color: rgb(42, 75, 165);
+}
+h3{color: rgb(165, 42, 114);border-style:groove; border-left: rgb(168, 89, 53); border-width: 15px;
+}
+.orange-paragraph {
+    color: rgb(248, 8, 8);
+}
+.first-div {
+    font-style: italic; text-align: right;
+}
+#heading000 {
+    font-family: cursive;
+}
+body {
+    background-color: yellowgreen;
+}

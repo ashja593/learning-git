@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(farnorth.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 120px;
+    font-size: 30px;
+    color: rgba(25, 235, 235, 0.671);
+    border-left: white;
+    border-width: thick;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 7px;
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    transform: translateY(-50);
+    text-align: center;
+    color: white;
+}
+.content h1 {
+    font-size: 35px;
+    margin-top: 5px;
+}
+.content p {
+    margin: 5px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+form {
+    margin-top: 150px;
+    width: 100%;
+    max-width: 50%;
+    position: relative;
+    left: 25%;
+    font-size: 15px;
+}
+.inputgroup {
+    margin-bottom: 30px;  
+}
+
+input, textarea {
+    margin: 7px;
+    width: 100%;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px;
+    background: transparent;
+    font-size: 15px;
+}
+
+label {
+    color: white;
+    height: 100%;
+    position: relative;
+    bottom: 54px;
+    left: 7px;
+    font-size: 15;
+}
+.message {
+    bottom: 95px;
+}
+
+button {
+    padding: 10px 0;
+    color: white;
+    background: transparent;
+    border: 1pxm solid white;
+    cursor: pointer;
+    width: 20%;
+}
+
+button::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+button:hover::after {
+    width: 20%;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .banner, .navbar, .content, content p, content h1, label, form, .inputgroup, input, textarea, h1, .button {
+        /*flex-direction: column*/
+        flex-direction: column;
+    }   
+}
+
+@media screen and (width: 600px) {
+    .banner, .navbar, .content, content p, content h1, label, form, .inputgroup, input, textarea, h1 {
+        /*flex-direction: column*/
+        flex-direction: column;
+    }   
+}
